@@ -1,0 +1,74 @@
+<script src="js/ajax.js"></script>
+
+<script>
+
+function autentica(){ 
+	usuario = document.getElementById("dni").value;
+	url = "cv/existe_usuario.php?usuario=" + usuario;
+	leer_doc(url, procesarRespuesta);
+}
+
+
+function procesarRespuesta(){
+	respuesta = req.responseXML;
+	var existe = respuesta.getElementsByTagName('existe').item(0).firstChild.data;
+	if (existe=="false"){		
+		document.getElementById("error").style.visibility = "visible";
+	}else{
+		document.getElementById("error").style.visibility = "hidden";
+	}
+	
+}
+
+function validezUsuario(){	
+	return document.getElementById("error").style.visibility == "hidden";
+}
+
+
+</script>
+<!--<form action="cv/login/new_forgotPwd.php" method="post" name="page1" id="page1" onsubmit="return validezUsuario();">-->
+<form action="cv/login/new_forgotPwd.php" method="post" name="page1" id="page1" >
+
+<div class="cuadro_resaltado titulo1">Olvidaste tu contraseña</div>
+<br>
+
+<div class="subtitulo">Ingresa tu DNI</div>
+
+
+
+<table class="texto1" width="60%" align="center" border="0" cellpadding="1" cellspacing="2">
+<tbody><tr><td>
+<span class="texto1">Ingresa tu DNI y se te enviara un e-mail automático con tu usuario y tu contraseña.
+</span>
+
+</td></tr>
+</tbody></table>
+<br><br>
+<table width="80%" align="center" border="0" cellpadding="1" cellspacing="2">
+	<tbody><tr>
+	<td class="texto1" width="100"><font color="red" size="2">*</font>DNI:</td>
+	<td class="element"><input class="caja" name="dni" id="dni" type="text" onkeyup='return autentica(this.value);'>&nbsp;
+	<span id="error" style="color: #FF0033;background-color:#FFFF99; margin-top:-6px;margin-left:0px; position:absolute;visibility:hidden;">DNI inexistente en nuestra Base de Datos</span><br></td>
+	</tr>
+	<tr><td colspan="2"> <span class='texto1' style='position:relative;'><font color='#FF0033'>Solo números sin puntos ni espacios</font><span></td></tr>
+	<tr>
+
+	
+</tr></tbody></table>
+
+
+<br><br><br>
+<div align="center">
+<span class="texto1"><input class="botonG" name="_qf_page1_submit" value="Continuar" type="submit"></span>&nbsp;&nbsp;<span class="texto1"><input class="botonG" onclick="JavaScript: location.href='index.php'" name="salir" value="Salir" type="button">
+</span>
+
+<br><br><br>
+</div>
+
+</form>
+<script>
+var dni = new LiveValidation('dni', {onlyOnSubmit: true } );
+dni.add( Validate.Presence );
+
+dni.add( Validate.Numericality );
+</script>

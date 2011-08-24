@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE>PROLAB - Ingreso/modificación de CV</TITLE>
+<link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+</HEAD>
+<BODY>
+{page1_javascript}
+
+<FORM {page1_attributes}>
+{page1_usuario_html}
+<DIV class="titulo">{page1_header_titulo}</DIV>
+<br />
+<DIV class="header">{page1_header_subtitulo}</DIV>
+
+<br />
+<table width="80%"  border="0" align="center" cellpadding="1" cellspacing="2" >
+	<tr>
+	<td width='100' class="label" >{page1_nivel_label}</td>
+	<td class="element">{page1_nivel_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_institucion_label}</td>
+	<td class="element">{page1_institucion_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_recibidoDe_label}</td>
+	<td class="element">{page1_recibidoDe_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_estado_label}</td>
+	<td class="element">{page1_estado_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_egreso_label}</td>
+	<td class="element">{page1_egreso_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_promedio_label}</td>
+	<td class="element">{page1_promedio_html}<BR></td>
+	</tr>
+</table>
+<DIV>
+	<DIV class="element">{page1_required_note}</DIV>
+	<DIV class="comment">{page1_clientSide_html}{page1_clientSide_label}</DIV>
+</DIV>
+<DIV class="useraddmenu">
+{page1__qf_page1_preview_html}{page1__qf_page1_submit_html}&nbsp;{page1__qf_page1_modificar_html}&nbsp;{page1_salir_html}
+</DIV>
+
+</FORM>
+</BODY>
+</HTML>

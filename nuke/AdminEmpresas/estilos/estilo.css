@@ -1,0 +1,156 @@
+BODY {
+	margin: 5px,5px,5px,5px;
+	border: thin dashed #D0D0D0;
+	background-color: transparent;
+}
+FORM {
+	display : inline;
+}
+.menuH{
+	font-family : "MS Sans Serif", Geneva, sans-serif;
+	font-size : small;
+	font-weight : bolder;
+	background-image : url(fondo1.jpg);
+	color : Navy;
+	background-repeat : repeat-x;
+	text-align : center;
+	display : inline;
+	width : 100%;
+	margin : 0px 0px 0px 0px;
+}
+.titulo{
+	font-family: sans-serif;
+	background-color: #466A46;
+	font-size: 16px;
+	color: White;
+	text-align: center;
+	font-weight: bold;
+}
+.estudiante{
+	font-family: sans-serif;
+	background-color: #FFA500;
+	font-size: 16px;
+	color: Black;
+	text-align: left;
+	font-weight: bold;
+}
+.error{
+	font-family: sans-serif;
+	background-color: Red;
+	font-size: smaller;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+}
+.ok{
+	font-family: sans-serif;
+	background-color: #32CD32;
+	font-size: smaller;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+}
+.header {
+	font-family: sans-serif;
+	font-size: x-small;
+	color: Black;
+	background-color: #F5F5DC;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	font-weight: bold;
+	padding: 0px 0px 0px 5px;
+}
+.boton{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: Black;
+	background-color: #F0F8FF;
+	border: thin solid #666666;
+	cursor: hand;
+	width: 70px;
+}
+.botonG{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: Black;
+	background-color: #F0F8FF;
+	border: thin solid #666666;
+	cursor: hand;
+	width: 100px;
+}
+.caja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: Blue;
+	background-color: #FFFFF0;
+	border: thin solid #666666;
+}
+.select {
+	background : #F0FFF0;
+	border : double Gray;
+	color : Navy;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+.useraddmenu{
+	background-color: transparent;
+	color: navy;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 1px,2px,1px,5px;
+}
+.label{
+	width: 30%;
+	text-align: right;
+	padding: 2px 2px 0px 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: Black;
+	margin-top: 5px;
+	vertical-align: top;
+	font-weight: bold;
+	display: inline;
+}
+.element{
+	width: 70%;
+	text-align: left;
+	padding: 2px 2px 0px 2px;
+	color: Blue;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+	font-size: 12px;
+	display: inline;
+}
+.comment {
+	text-align : left;
+	width : 100%;
+	font-family : sans-serif;
+	font-size : xx-small;
+	font-weight : bolder;
+	color : Black;
+	display : inline;
+	padding : 2px 2px 2px 2px;
+}
+.space{
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	display : inline;
+	width : 30%;
+}
+.area{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #000000;
+	background-color: Blue;
+	border: thin solid Green;
+	padding: 5px,5px,5px,5px;
+}
+
+	A{
+	font-family: MS Sans Serif, Arial, Tahoma,sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color : Navy;
+	text-decoration : none;
+	text-align: left;
+}

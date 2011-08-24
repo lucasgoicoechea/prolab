@@ -1,0 +1,78 @@
+FONT	{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+TD		{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+BODY	{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+P		{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+DIV		{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+
+.bodyline {border:0px solid #345487}
+body {
+	background-color: #FFFFFF;
+	scrollbar-face-color: #DCE7F1;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+}
+.tblBorder	{ background-color: #EFF6FB; border: 1px #B6DFFB solid; }
+a:link,a:active,a:visited { color : #006699; }
+a:hover		{ text-decoration: underline; color : #DD6900; }
+.title 		 {BACKGROUND: none; COLOR: #cc0000; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.content 	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.block-title {BACKGROUND: none; COLOR: #cc0000; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.storytitle  {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.storycat	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: underline}
+.boxtitle 	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.boxcontent  {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Helvetica}
+.option 	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.tiny		 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+.small		 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 9px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+hr	{ height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+
+/* Form elements */
+input,textarea, select {
+	color : #000000;
+	font: normal 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #AEC7D8;
+}
+/* The text input fields background colour */
+input.post, textarea.post, select {
+	background-color : #FFFFFF;
+}
+input{text-indent:2px}
+
+/* The buttons used for bbCode styling in message post */
+input.button {
+	background-color : #D2E8F7;
+	color : #000000;
+	font-size: 11px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* The main submit button option */
+input.mainoption {
+	background-color : #D2E8F7;
+	font-weight : bold;
+}
+
+/* None-bold submit button */
+input.liteoption {
+	background-color : #D2E8F7;
+	font-weight : normal;
+}
+
+/* Quote & Code blocks */
+.code {
+	font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #006600;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.quote {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+.mainmenu		{ font-size : 11px; color : #000000 }
+a.mainmenu		{ text-decoration: none; color : #006699;  }
+a.mainmenu:hover{ text-decoration: underline; color : #DD6900; }

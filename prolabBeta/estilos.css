@@ -1,0 +1,944 @@
+.cuerpo{
+	top: 0px;
+	margin-top: 0px;
+	text-align: center;	 
+	background-image:url("images/fondo.gif");
+}
+.fondo{
+	background: #FFFFFF;
+	width: 780px;
+	border: 1px solid Silver; 
+	vertical-align: top; 
+	/*overflow: hidden; JODE EL MENU SUPERIOR*/
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+.encabezado{
+	background: #FFFFFF;
+	height: 150px;
+	width: 776px;
+	padding : 4px 2px 4px 2px;
+}
+.encabezado2{
+	height: 20px; 
+	background: transparent; 
+	width: 100%;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	}
+.lateralIzq{ 
+	margin : 0px 0px 0px 0px;
+	padding : 20px 0px 0px 2px;
+	width : 200px;
+	background-color: White;
+	float : left;
+	position : relative;
+	clear : left;
+	border-right: 1px dotted Silver;
+}
+.lateralDer{ 
+   margin : 0px;
+	padding : 0px;
+	background-color: #EEEEEE;
+	width : 576px;
+	float : right;
+	background-position : right;
+	position : relative;
+	clear : right;
+	vertical-align: top;
+}
+
+.pagina{
+	background: #FAFAFA;
+	width: 100%;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	text-align: left;
+	vertical-align: top;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+}
+
+/* BARRA DE MENU ####################### */
+.barraMenu{
+	width: 100%;
+	background: #DCDCDC;
+	font-size: smaller;
+	font-style: normal;
+	font-weight: bold;
+	color: #00008B;
+	height: 20px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	vertical-align: middle;
+	border: 1px solid Silver;
+}
+	
+.opcionMenu{
+	text-align: center;
+  	height: 15px;
+    cursor: hand;
+	position: relative;
+	float: left;
+	top: 1px;
+    padding: 0px 4px 0px 4px;
+	font-size: 12px;
+	margin-left: 5px;
+	vertical-align: middle;	
+}
+
+#opcionMenuSFoco{
+	color: #4B0082;
+	width: 100px;
+}
+#opcionMenuCFoco{
+	color: #FFA500;
+	width: 100px;
+}
+
+.recMenu{
+	text-align: left;
+    background-color: #DCDCDC;
+	height: 22px;
+	width: 100%;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	position: absolute;
+    padding: 0px 0px 0px 0px;
+	z-index: 2;
+	top: 22px;
+	left: 0px;
+    display: none;
+	clear: left;
+	float: left;
+	border: 1px solid Silver;
+}
+	
+/* MENU LATERALES  ########################## */
+.menu{
+	border: 1px solid silver;       
+   width: 195px;
+	position: relative;	
+}
+
+.login{	
+   width: 195px;
+	position: relative;
+	border-top: 0;
+}
+
+.menuEnc{
+	width: 100%; 
+   height: 25px;
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+ 	border-bottom: 1px solid Silver;
+	padding-top: 5px;
+}
+
+#menuEncLogin{background: #DA3472;}
+#menuEncLinks{background: #DA3472;}
+
+.menuBody{
+		    font-family: verdana;
+	       font-weight: bold;
+	       font-size: 11px;
+			 color: #000066;
+			margin-top: 0px;
+			text-align: left;
+}
+
+#menuBodyLogin{background-image: #E0E0E0;  padding: 0px 0px 0px 0px;  margin: 0px 0px 0px 0px;  }
+#menuBodyLinks{background: #F5F5F5;  
+               line-height: 20px; }
+
+/*A:link {font-family: arial;
+	       font-weight: bold;
+	       font-size: 12px;
+			 color: #6495ED;
+}
+A:visited {font-family: arial;
+	       font-weight: bold;
+	       font-size: 12px;
+			 color: #778899;
+}*/
+p{
+	font-family: arial;
+}
+
+.formLabel,.formInput {
+	display: block;
+	width: 8em;
+	float: left;
+	margin-bottom: 0.3em;
+}
+
+.formLabel {
+	text-align: center;
+	width: 4em;
+	padding-right: 1em;
+}
+
+.formInput {
+	clear: left;
+}
+
+/* ########### F.A.Q. ################ */
+.pregunta{
+		   color: #6445ED;  
+           background-color: #AFD7F7;
+           border: 1px solid #C6C7D6;
+		   font-family: arial;
+           font-weight: bold;
+           font-size: 12px;
+		   cursor: hand;
+		   position: relative;
+		   left: 10px;
+		   width: 550px;
+		   margin-top: 8px;
+}
+.respuesta{ /*color: #0002BF;*/  
+           color: #9C9A9C;
+           background-color: #FBFBFB;
+           /*font-weight: bold;*/
+           font-size: 12px;
+           text-align: center;
+           border-bottom: 1px solid #C6C7D6;
+           border-left: 1px solid #C6C7D6;
+           border-right: 1px solid #C6C7D6;
+			  position: relative;
+			  left: 10px;
+			  width: 550px;
+			  display: none;
+}
+.respuesta2{ /*color: #0002BF;*/  
+           color: #9C9A9C;
+           background-color: #FBFBFB;
+           /*font-weight: bold;*/
+           font-size: 14px;
+           border-bottom: 1px solid #C6C7D6;
+           border-left: 1px solid #C6C7D6;
+           border-right: 1px solid #C6C7D6;
+			  position: relative;
+			  left: 10px;
+			  width: 550px;
+			  display: none;
+}
+.clasificacion2{ /*color: #0002BF;*/  
+           color: #9C9AFF;
+           background-color: #F8F4FF;
+           /*font-weight: bold;*/
+           font-size: 12px;
+           border-bottom: 1px solid #C6C7D6;
+           border-left: 1px solid #C6C7D6;
+           border-right: 1px solid #C6C7D6;
+			  position: relative;
+			  left: 10px;
+			  width: 550px;
+			  display: none;
+}
+/* ########### TITULOS ################ */
+h1{ color: #0000CD;}
+h3{color: #0033cc}
+
+/* ###########   CONSULTAS  ##############*/
+.listadoConsultas{ 
+    border: 1px solid Silver; 
+	 margin-left: 10px;
+	 background-color: #FAFAFA;
+	 width: 90%;}
+	 
+#menuEncConsultas{background: #DCDCDC;
+                  color: #71B6CC;}
+.tablaListadoConsultas{
+	background-color: #FAFAFA;
+   left: 0px;
+   width: 100%;
+	padding-left: 5px;
+	padding-right: 15px;
+}
+.titulosListadoConsultas{
+	font-weight: bold;
+	font-family: arial;
+	text-align: center;
+	font-size: 12px;
+}
+#titulosCant{
+	width: 50px;		
+	font-size: 10px;
+}
+.cantListadoConsultas{
+	background-color: #FAFAFA;
+   width: 50px;
+	text-align: right;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 12px;
+	border-bottom: 1px dashed #C6C6C6;
+}
+A#cantPend{color:#FF4500}
+A#cantPropios{color:#3CB371}
+A#cantOtros{color:#9370DB}
+A#cantTotal{color:#6495ED}
+
+.uno{
+	border-bottom: 1px dashed #C6C6C6;
+}
+/**************************************************************************************************************/
+									/*ESTILO DE PAGINA ANTERIOR*/
+/**************************************************************************************************************/
+FONT	{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+
+TD		{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+
+
+P		{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+
+DIV		{ font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px}
+.tblBorder	{ background-color: #EFF6FB; border: 1px #B6DFFB solid; }
+
+
+
+.tblBorder2	{ background-color: #EFF6FB; border: 1px solid #B6DFFB; margin: 0%; }
+
+a:link,a:active,a:visited {
+	color : #006699;
+}
+
+a:hover		{ text-decoration: underline; color : #DD6900; }
+
+/*.title 		 {BACKGROUND: none; COLOR: #cc0000; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}*/
+
+.title 		 {BACKGROUND: none; COLOR: #B04C58; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+
+.content 	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 13px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+
+.block-title {BACKGROUND: none; COLOR: white; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif}
+
+.storytitle  {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+
+.storycat	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline}
+
+.boxtitle 	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+
+.boxcontent  {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+
+.option 	 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+
+/*.option2	 {BACKGROUND-color: Fuchsia; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}*/
+
+.tiny		 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+
+.small		 {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 9px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+
+/*contents*/
+
+.tituloWord {font-size: 12pt; color: green;}
+
+}
+
+/**/
+
+
+
+hr	{ height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+
+/*.select2{scrollbar-face-color:#D1D7DC ;
+
+scrollbar-arrow-color:#D1D7DC;
+
+scrollbar-highlight-color: #D1D7DC;
+
+scrollbar-3dlight-color: #D1D7DC;
+
+scrollbar-shadow-color: #D1D7DC;
+
+scrollbar-darkshadow-color: #D1D7DC;
+
+scrollbar-track-color: #D1D7DC;
+
+	
+
+}*/
+
+/* Form elements */
+
+input,textarea, select {
+
+	color : #000000;
+
+	font: normal 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+
+	border: 1px solid #AEC7D8;
+
+	
+
+}
+
+/* The text input fields background colour */
+
+input.post, textarea.post, select {
+
+	background-color : #FFFFFF;
+
+}
+
+input{text-indent:2px}
+
+
+
+/* The buttons used for bbCode styling in message post */
+
+input.button {
+
+	background-color : #D2E8F7;
+
+	color : #000000;
+
+	font-size: 11px; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* The main submit button option */
+
+input.mainoption {
+
+	background-color : #D2E8F7;
+
+	font-weight : bold;
+
+}
+
+
+
+/* None-bold submit button */
+
+input.liteoption {
+
+	background-color : #D2E8F7;
+
+	font-weight : normal;
+
+}
+
+
+
+/* Quote & Code blocks */
+
+.code {
+
+	font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #006600;
+
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+
+}
+
+
+
+.quote {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+
+}
+
+.mainmenu		{ font-size : 11px; color : #000000 }
+
+a.mainmenu		{ text-decoration: none; color : #006699;  }
+
+a.mainmenu:hover{ text-decoration: underline; color : #DD6900; }
+
+
+
+#ari{
+
+	background-color: #FFFFFF;
+
+}
+
+#footer{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bolder;
+	color: #DD3177;
+	/*color: #B04C58;
+	*/
+	width : 100%;
+}
+
+#footer1{
+
+	font-size: 13px;
+
+	font-weight: bold;
+
+	color: #1D3C81;
+
+}
+
+subtituloN{
+
+	font-size:13px;
+
+	font-weight: bold;
+
+	}
+
+/*table{ background: #66CC99; }*/
+
+
+
+/* 
+
+* estilos del modulo add_empresa que se llamaban estilo.css
+
+*/
+
+
+
+FORM {
+
+	display : inline;
+
+}
+
+.menuH{
+
+	font-family : "MS Sans Serif", Geneva, sans-serif;
+
+	font-size : small;
+
+	font-weight : bolder;
+
+	background-image : url(fondo1.jpg);
+
+	color : Navy;
+
+	background-repeat : repeat-x;
+
+	text-align : center;
+
+	display : inline;
+
+	width : 100%;
+
+	margin : 0px 0px 0px 0px;
+
+}
+
+.titulo{
+
+	font-family: sans-serif;
+
+	background:#5164AE;
+
+	font-size: 16px;
+
+	color: white;
+
+	text-align: center;
+
+	font-weight: bold;
+
+}
+
+.estudiante{
+
+	font-family: sans-serif;
+
+	background-color: #FFA500;
+
+	font-size: 16px;
+
+	color: Black;
+
+	text-align: left;
+
+	font-weight: bold;
+
+}
+
+.error{
+
+	font-family: sans-serif;
+
+	background-color: Red;
+
+	font-size: smaller;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-weight: bold;
+
+}
+
+.ok{
+
+	font-family: sans-serif;
+
+	background-color: #32CD32;
+
+	font-size: smaller;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-weight: bold;
+
+}
+
+.header {
+
+	font-family: sans-serif;
+
+	font-size: x-small;
+
+	color: Black;
+
+	background-color: #DAD8D6;
+
+	margin-bottom: 4px;
+
+	margin-top: 4px;
+
+	font-weight: bold;
+
+	padding: 0px 0px 0px 5px;
+
+}
+
+.headerCv {
+
+	FONT-WEIGHT: bold;
+
+	FONT-SIZE: 12px;
+
+	CURSOR: default;
+
+	COLOR: #1d3c81;
+
+	height: 20px;
+
+	vertical-align: center;
+
+	text-align:center;
+
+	background-color: #DAD8D6;
+
+	font-weight: bold;
+
+
+}
+
+.boton{
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 10px;
+
+	color: Black;
+
+	background-color: #F0F8FF;
+
+	border: 1px solid #666666;
+
+	cursor: hand;
+
+	width: 70px;
+
+}
+
+.botonG{
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 10px;
+
+	color: Black;
+
+	background-color: #F0F8FF;
+
+	border: 1px solid #666666;
+
+	cursor: hand;
+
+	width: 100px;
+
+}
+
+.caja {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	color: Blue;
+
+	background-color: #FFFFF0;
+
+	border: 1px solid #666666;
+
+}
+
+.select {
+
+	/*background : #F0FFF0;*/
+
+	background: #EFF6FB;
+
+	border : double Gray;
+
+	color : Navy;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+}
+
+.useraddmenu{
+
+	background-color: transparent;
+
+	color: navy;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: bold;
+
+	padding: 1px,2px,1px,5px;
+
+}
+
+.label{
+
+	width: 30%;
+
+	text-align: right;
+
+	padding: 2px 2px 0px 2px;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	color: Black;
+
+	margin-top: 5px;
+
+	vertical-align: top;
+
+	font-weight: bold;
+
+	display: inline;
+
+}
+
+.element{
+
+	width: 70%;
+
+	text-align: left;
+
+	padding: 2px 2px 0px 2px;
+
+	color: Blue;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin-top: 5px;
+
+	font-size: 12px;
+
+	display: inline;
+
+}
+
+.comment {
+
+	text-align : left;
+
+	width : 100%;
+
+	font-family : sans-serif;
+
+	font-size : xx-small;
+
+	font-weight : bolder;
+
+	color : Black;
+
+	display : inline;
+
+	padding : 2px 2px 2px 2px;
+
+}
+
+.space{
+
+	padding : 0px 0px 0px 0px;
+
+	margin : 0px 0px 0px 0px;
+
+	display : inline;
+
+	width : 30%;
+
+}
+
+.area{
+
+	font-family: "Times New Roman", Times, serif;
+
+	font-size: 13px;
+
+	color: #000000;
+
+	background-color: Blue;
+
+	border: thin solid Green;
+
+	padding: 5px,5px,5px,5px;
+
+}
+
+.recuadro{
+	background-color: #df3a74;
+	font-size : 16px;
+	text-decoration : none;
+	font-family : Default;
+	color : white;
+	border-right : solid;
+}
+
+
+
+.est1{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10px;
+	CURSOR: default;
+	COLOR: "#FFFFFF";
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: center;
+}
+.est2{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10px;
+	CURSOR: default;
+	COLOR: "#333333";
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.est3{
+	FONT-SIZE: 12px;
+	CURSOR: default;
+	COLOR: "#333333";
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: center;
+}
+
+.articulo{
+	font-size: 11pt;
+	color : Navy;
+	font-family : "Times New Roman";
+}
+
+.resumenTitulo{
+	font-size: 14;
+	color:white;
+	background:#183C84;
+	cursor: hand;
+	font-weight : bold;
+	text-decoration : none;
+	font-family : Verdana;
+}
+
+.resumenContenido{
+	color: Black;
+	background-color: #FFFFFF;
+	font-family: "Lucida Console";
+	font-size: 14px;
+}
+/* fin estilos add_empresa */
+.rosa{
+	font-size: 26px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bolder;
+	color: #DD3177;
+}
+
+.texto1a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #DD3177;
+	text-decoration: none;
+	text-align: justify;
+	font-weight: bold;
+	
+}
+
+.texto1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #1D3C81;
+	text-decoration: none;
+	text-align: justify;
+	
+}
+.subtitulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-variant: normal;
+	color: #1D3C81;
+	text-decoration: none;
+	
+}
+
+/*****************Live validation*************************/
+.LV_valid{
+	color: #339900;
+}
+
+.LV_invalid{
+	color: #CC3366;
+}
+
+.LV_validation_message{
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.LV_valid_field{
+	border-color: #336600;	
+}
+
+.LV_invalid_field{
+	border-color: #CC3366;
+}

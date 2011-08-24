@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>IzzyMenu.com</title><script type="text/javascript" src="chrome.js"></script>
+<style>
+#MainMenu 
+{
+	height:33px;
+	background:url(images/bmid_077.gif);
+	border:0;
+	margin:0;
+}
+#tab 
+{
+	top:0;
+	height:0;
+	background:repeat-x top;
+	margin:2px;
+}
+#tab ul 
+{
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tab li 
+{
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tab a 
+{
+	background:#000 url(images/bright_077.gif) no-repeat right top;
+	text-decoration:none;
+	border:0;
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tab a span 
+{
+	display:block;
+	background:url(images/bleft_077.gif) no-repeat left top;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	font-weight:700;
+	line-height:33px;
+	padding:0 15px;
+}
+#tab a:hover,#tab li.item_active a 
+{
+	background-position:right bottom;
+}
+#tab a:hover span,#tab li.item_active a span 
+{
+	background-position:left bottom;
+	color:#FFF;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+}
+.dropmenudiv 
+{
+	position:absolute;
+	top:0;
+	float:left;
+	display:block;
+	visibility:hidden;
+	border:0;
+	background:url(images/bmid_077.gif);
+	color:#FFF;
+	z-index:100;
+	text-decoration:none;
+	padding:2px;
+}
+.dropmenudiv ul 
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.dropmenudiv li 
+{
+	display:inline;
+	margin:0;
+	padding:0;
+}
+.dropmenudiv a:link,.dropmenudiv a:visited 
+{
+	width:180px;
+	display:block;
+	border:0;
+	color:#FFF;
+	background:url(images/bleft_077.gif) no-repeat left top;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+}
+.dropmenudiv a span 
+{
+	display:block;
+	line-height:33px;
+	background:url(images/bright_077.gif) no-repeat right top;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	float:none;
+	padding:0 15px;
+}
+.dropmenudiv a:hover 
+{
+	border:0;
+	background-position:left bottom;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	color:#FFF;
+}
+.dropmenudiv a:hover span 
+{
+	background-position:right bottom;
+	color:#FFF;
+	font-weight:700;
+}
+
+</style></head><body>
+<div id="MainMenu">
+	<div id="tab">
+		<ul>
+			<li class="item_active"><a href="subpage.html" onMouseover="cssdropdown.dropit(this,event,'dropmenu_101')"><span>Postulantes</span></a></li>
+			<li><a href="subpage.html" onMouseover="cssdropdown.dropit(this,event,'dropmenu_102')"><span>Empresas</span></a></li>
+			<li><a href="subpage.html" onMouseover="cssdropdown.dropit(this,event,'dropmenu_104')"><span>Institucional</span></a></li>
+			<li><a href="subpage.html" onMouseover="cssdropdown.dropit(this,event,'dropmenu_869742')"><span>Asesoramiento</span></a></li>
+			<li><a href="subpage.html" onMouseover="cssdropdown.dropit(this,event,'dropmenu_261001')"><span>Investigaciones</span></a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="dropmenu_101" class="dropmenudiv">
+	<ul>
+		<li><a href="#"><span>Universitarios</span></a></li>
+		<li><a href="#"><span>No Universitarios</span></a></li>
+	</ul>
+</div>
+
+<div id="dropmenu_102" class="dropmenudiv">
+	<ul>
+		<li><a href="#"><span>Servicio</span></a></li>
+		<li><a href="#"><span>Subscripcion</span></a></li>
+	</ul>
+</div>
+
+<div id="dropmenu_104" class="dropmenudiv">
+	<ul>
+		<li><a href="#"><span>Quienes somos</span></a></li>
+		<li><a href="#"><span>Objetivos</span></a></li>
+	</ul>
+</div>
+
+<div id="dropmenu_869742" class="dropmenudiv">
+	<ul>
+		<li><a href="#"><span>Como armar tu CV</span></a></li>
+		<li><a href="#"><span>Carta de presentación</span></a></li>
+		<li><a href="#"><span>Asesoramiento contable</span></a></li>
+	</ul>
+</div>
+
+<div id="dropmenu_261001" class="dropmenudiv">
+	<ul>
+		<li><a href="#"><span>Estadisticas</span></a></li>
+		<li><a href="#"><span>Informes</span></a></li>
+		<li><a href="#"><span>Escuestas</span></a></li>
+	</ul>
+</div>
+<div style="clear:both; text-align:center; padding:10px;"><a href="http://www.izzywebsite.com/go?izzymenudownload"><img src="download.jpg" border="0" /></a></div><iframe frameborder="0" width="100%" height="1500" src="http://www.templateo.com"></iframe></body></html>

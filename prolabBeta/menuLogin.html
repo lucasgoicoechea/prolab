@@ -1,0 +1,58 @@
+<script src="js/ajax.js"></script>
+<script>
+
+function autentica(){ 
+	usuario = document.getElementById("dni").value;
+	url = "cv/existe_usuario.php?usuario=" + usuario;
+	leer_doc(url, procesarRespuesta);
+}
+
+function procesarRespuesta(){
+	respuesta = req.responseXML;
+	var existe = respuesta.getElementsByTagName('existe').item(0).firstChild.data;
+	if (existe=="true"){		
+		document.getElementById("error").style.visibility = "visible";
+	}else{
+		document.getElementById("error").style.visibility = "hidden";
+	}
+	
+}
+
+function validezUsuario(){	
+	return document.getElementById("error").style.visibility == "hidden";
+}
+
+
+</script>
+<form action="cv/login/validar.php" method="post" onsubmit="return validarLogin()" class="menuBody" id="menuBodyLogin">
+<center>
+	 <div class="rbroundbox" style="width: 100%; margin-top: 0px; margin-bottom: 0px;">
+				<div class="rbtop">
+					<div></div>
+				</div>
+				<div class="rbcontent">
+					 <img src="img/login.gif" alt="Llaves" border="0" align="middle">
+					 <span class="titulo3">Accede a tu CV</span>
+				</div><!-- /rbcontent -->
+				<div class="rbbot">
+					<div></div>
+				</div>
+			</div>
+	 <div class="menu" style="border-top: 0px; margin-top: -12px;"><br><br>
+		  <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usuario:&nbsp;</label>
+			<input type="text" size="16" name="user" id="usuario" class="formImput"> 
+			<br>
+		  <label for="pass">Contraseña:&nbsp;</label>
+		  <input type="password" size="16" name="pwd" id="clave" class="formImput">
+		  <br><br>
+		  
+		  <input type="submit" name="Ingresar" value="INGRESAR" class="boton">
+		   &nbsp;&nbsp;&nbsp;
+		  <input type="reset" name="Borrar" value="LIMPIAR" class="boton">
+		  <br><br>
+		  <A HREF="index.php?op=cv/login/new_forgotPwd.html"><font color="#0033CC" face="Geneva, Arial, Helvetica, sans-serif">Olvide
+						mi contrase&ntilde;a</font></A><br><br>
+	 </div>		
+</center>
+</form>
+ 

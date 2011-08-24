@@ -1,0 +1,53 @@
+<!-- Pagina de carga de una persona afectada -->
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+</HEAD>
+<BODY>
+{page1_javascript}
+
+<FORM {page1_attributes}>
+{page1_idUsr_html}
+{page1_clave_html}
+<DIV class="titulo">{page1_header_titulo}</DIV>
+
+<DIV class="ok">{page1_header_ok}</DIV>
+
+<DIV class="header">{page1_header_subtitulo1}</DIV>
+
+<!-- *********************ACCESO AL SISTEMA************************** -->
+
+<DIV>
+	<p class="comment">{page1_texto_label}</p>	
+</div>
+
+
+<table width="80%"  border="0" align="center" cellpadding="1" cellspacing="0" >
+	<tr>
+	<td width='100' class="label" >{page1_usuario_label}</td>
+	<td class="element">{page1_usuario_html}</td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_claveActual_label}</td>
+	<td class="element">{page1_claveActual_html}</td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_nuevaClave_label}</td>
+	<td class="element">{page1_nuevaClave_html}</td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_confirmaClave_label}</td>
+	<td class="element">{page1_confirmaClave_html}</td>
+	</tr>
+	
+	</table>
+
+
+<BR>
+<DIV class="useraddmenu">
+{page1__qf_page1_preview_html}{page1__qf_page1_submit_html}&nbsp;{page1_reset_html}{page1__qf_page1_modificar_html}&nbsp;{page1_volver_html}&nbsp;{page1_salir_html}
+</DIV>
+
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,34 @@
+ De: Christian Rodriguez <car@cespi.unlp.edu.ar>
+
+ Asunto: Proyecto correcion grupo 42
+ 
+ Nota: APROBADO*
+ +++++++++
+ 
+ Observaciones:
+ ++++++++++++++
+ HTML:
+  * Clasificacion css para body sin sentido. Además los margenes pueden 
+ editarse con css en la siguiente linea:
+     <body class="cuerpo" topmargin="0px";
+ leftmargin="0px"; 
+ rightmargin="0px";>
+
+  * Abuso de div. Los titulos deberían ser h1, h2, etc
+
+  * Tag center en desuso
+
+  * La descripcion de un problema debería ser un textarea no un input text
+
+ FUNCIONALIDAD:
+  * Los ejemplos dados en la FAQ son exageradamente INFORMALES, donde se 
+ utilizan palabras inadecuadas para un nivel universitario. La proxima 
+ entrega con igual lenguaje será desaprobada
+
+  * Debería restringir la entrada de datos de los usuarios. De esta forma 
+ se normalizaría la info para luego facilitar las búsquedas. Cuando una 
+ opcion no se considere permitir escribir el texto.
+ El operador debería  poder agregar la nueva opcion.
+
+  * No muestra varios puntos: administración y estadísticas
+ 

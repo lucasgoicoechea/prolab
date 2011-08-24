@@ -1,0 +1,66 @@
+<script src="js/ajax.js"></script>
+
+<script>
+
+function autentica(){ 
+	usuario = document.getElementById("dni").value;
+	url = "cv/existe_usuario.php?usuario=" + usuario;
+	leer_doc(url, procesarRespuesta);
+}
+
+
+function procesarRespuesta(){
+	respuesta = req.responseXML;
+	var existe = respuesta.getElementsByTagName('existe').item(0).firstChild.data;
+	if (existe=="false"){		
+		document.getElementById("error").style.visibility = "visible";
+	}else{
+		document.getElementById("error").style.visibility = "hidden";
+	}
+	
+}
+
+function validezUsuario(){	
+	return document.getElementById("error").style.visibility == "hidden";
+}
+
+
+</script>
+<div class="cuadro_resaltado titulo1">Olvidaste tu contraseña</div>
+<br>
+
+<div class="subtitulo">El email a su casilla fue enviado con exito. </div>
+<br>
+
+
+<table class="texto1" width="60%" align="center" border="0" cellpadding="1" cellspacing="2">
+<tbody><tr><td>
+<span class="texto1">(Contrala en tu sector SPAM o "Correo no deseado", puede que tu servidor de mail nos halla filtrado.)
+</span>
+
+</td></tr>
+</tbody></table>
+<br><br>
+<table width="80%" align="center" border="0" cellpadding="1" cellspacing="2">
+	<tbody><tr>
+	<tr>
+
+	
+</tr></tbody></table>
+
+
+<br><br><br>
+<div align="center">
+&nbsp;<span class="texto1"><input class="botonG" onclick="JavaScript: location.href='index.php'" name="salir" value="Salir" type="button">
+</span>
+
+<br><br><br>
+</div>
+
+</form>
+<script>
+var dni = new LiveValidation('dni', {onlyOnSubmit: true } );
+dni.add( Validate.Presence );
+
+dni.add( Validate.Numericality );
+</script>

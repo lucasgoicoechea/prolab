@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<TITLE>PROLAB - Ingreso/modificación de CV</TITLE>
+<link rel="stylesheet" href="../../estilo1.css" type="text/css">
+</HEAD>
+<BODY>
+{page1_javascript}
+
+<FORM {page1_attributes}>
+{page1_idUsr_html}
+<DIV class="cuadro_resaltado titulo1">{page1_header_titulo}</DIV>
+<br />
+
+<DIV class="subtitulo">{page1_header_subtitulo}</DIV>
+
+
+
+<table width="60%"  border="0" align="center" cellpadding="1" cellspacing="2" class="texto1">
+<tr><td>
+<span class="texto1">
+Ingres&aacute; tu DNI y te enviamos por e-mail 
+            la contrase&ntilde;a. Si no ingresaste una direcci&oacute;n de e-mail 
+            al momento de registrar tus datos personales, comunicate al 427-7196/424-5420
+</span>
+</td></tr>
+</table>
+<BR><BR>
+<table width="80%"  border="0" align="center" cellpadding="1" cellspacing="2" >
+	<tr>
+	<td width='100' class="texto1" >{page1_dni_label_0}</td>
+	<td class="element">{page1_dni_html}&nbsp;<span class="texto1">{page1_dni_label_1}</span><BR></td>
+	</tr>
+	<tr>
+	
+</table>
+
+
+<DIV>
+	<DIV class="element texto1">{page1_required_note}</DIV>
+	<DIV class="comment texto1">{page1_clientSide_html}{page1_clientSide_label}</DIV>
+</DIV>
+<DIV class="texto1 useraddmenu">
+<span class="texto1">{page1__qf_page1_preview_html}{page1__qf_page1_submit_html}</span>&nbsp;{page1__qf_page1_modificar_html}&nbsp;<span class="texto1">{page1_salir_html}
+</span>
+</DIV>
+
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,90 @@
+
+<script type="text/javascript" src="js/livevalidation.js"></script>
+
+<STYLE>
+.titulo{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	CURSOR: default;
+	COLOR: Navy;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: center;
+}
+.titulo1{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	CURSOR: default;
+	COLOR: Silver;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: center;
+}
+.titulo2{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	CURSOR: default;
+	COLOR: white;
+	background: #A09994;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: center;
+}
+.texto9 {
+	FONT-SIZE: 11px;
+	CURSOR: default;
+	COLOR: dd3177;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	TEXT-ALIGN: right;
+	font-weight: bold;
+}
+.boton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: navy;
+	background-color: #f5f5f5;
+	border: thin solid #666666;
+	cursor: hand;
+	width: 70px;
+	
+}
+.caja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:navy;
+	background-color: #ffffff;
+	border: thin solid #dd3177;
+}
+
+
+</STYLE>
+
+ <FORM {form_attributes}>
+  <br><br><br><br><br><br><br>
+	 
+  <TABLE width="75%" height="20%" border="0" align="center" bordercolor="#3300CC" bgcolor="#E6E8E6" color="#e7eff4">
+    <TR> 
+      <TD colspan="2"  class="titulo2">Ingreso al área de administración de empresas</TD>
+    </TR>
+	<TR> 
+      <TD colspan="2">&nbsp;</TD>
+    </TR>
+
+    <TR> 
+      <TD width="40%" align="right"> 
+        <div class="texto9">{form_user_label}</div></TD>
+      <TD>{form_user_html}&nbsp;&nbsp;{form_userMsg_label}</TD>	  
+    </TR>
+    <TR> 
+      <TD width="40%" align="right"> 
+        <div class="texto9">{form_pwd_label}</div></TD>
+      <TD>{form_pwd_html}</TD>
+    </TR>
+    <TR align="center"> 
+      <TD height="41" colspan="2">{form_boton_html}</TD>	
+    </TR>
+  </TABLE>
+</FORM>
+
+<!--<script>
+var usuario = new LiveValidation('user');
+usuario.add( Validate.Presence );
+
+</script>-->

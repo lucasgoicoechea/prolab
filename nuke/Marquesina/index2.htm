@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Marquesina de Imagenes :: PROLAB ::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+/*****************************************************************************
+Carousel de imágenes (marquesina horizontal). Script creado por Tunait! (18/8/2003) modificado el 25/12/2003.
+Si quieres usar este script en tu sitio eres libre de hacerlo con la condición de que permanezcan intactas estas líneas, osea, los créditos.
+No autorizo a publicar y ofrecer el código en sitios de script sin previa autorización
+Si quieres publicarlo, por favor, contacta conmigo.
+http://javascript.tunait.com/
+tunait@yahoo.com 
+******************************************************************************/
+var ancho = 600  // especifica la anchura de la marquesina
+var alto = 70 // especifica la altura de la marquesina (alto de las imágenes)
+var velo = 20 // velocidad 
+var dis = 3 // cantidad de pixels que desplaza por movimiento
+
+//Array de imagenes a mostrar en la marquesina
+var imagenes = new Array()
+imagenes[0] = new Image()
+imagenes[0].src = "CeramicosLP.jpg" // ruta o nombre de imagen 
+imagenes[0].a = "" // link de la imagen
+imagenes[0].target = "_blank" // target del link
+imagenes[1] = new Image()
+imagenes[1].src = "BCRA.jpg"
+imagenes[1].a = ""
+imagenes[1].target = "_blank"
+imagenes[2] = new Image()
+imagenes[2].src = "GobiernoBSAS.jpg"
+imagenes[2].a = ""
+imagenes[2].target = "_blank"
+imagenes[3] = new Image()
+imagenes[3].src = "municipalidadLP.jpg"
+imagenes[3].a = ""
+imagenes[3].target = "_blank"
+imagenes[4] = new Image()
+imagenes[4].src = "estudiantes.jpg"
+imagenes[4].a = ""
+imagenes[4].target = "_blank"
+imagenes[5] = new Image()
+imagenes[5].src = "ministerio.jpg"
+imagenes[5].a = ""
+imagenes[5].target = "_blank"
+
+
+var vel = velo
+pasos = 4
+var tot = 0
+var tam =0;
+var pos,pos2,tam2 =0;
+function escribe(){
+document.write ('<div id ="fuera" style="position:relative; width:' + ancho + 'px; height:' + alto + 'px;overflow:hidden">');
+document.write ('<span id="imas" style="position:absolute; width:' + tam + 'px;height:' + alto + 'px; left = ' + tam + 'px;">'); //onmouseover="if(detienee == 0){detienee = 1}" onmouseout="clearTimeout(tiempo);detienee=0;atras = false;vel=velo;mueve()"
+for (m=0;m<imagenes.length;m++){
+	if(imagenes[m].a != ""){
+		document.write('<a href="' + imagenes[m].a + '" target="' + imagenes[m].target + '">')
+		}
+	document.write ('<img border="0"  src ="' + imagenes[m].src + '" id="ima' + m + '" name="ima' + m + '"  onload="tot++;">');
+	if(imagenes[m].a != ""){document.write ('</a>')}
+	}
+document.write ('</span>');
+document.write ('<span id="imas2" style="position:absolute; width:' + tam + 'px;height:' + alto + ';left=0;"  >'); //onmouseover="if(detienee == 0){detienee = 1}" onmouseout="clearTimeout(tiempo);detienee=0;atras = false;vel=velo;mueve()"
+for (m=0;m<imagenes.length;m++){
+	if(imagenes[m].a != ""){
+		document.write('<a href="' + imagenes[m].a + '" target="' + imagenes[m].target + '">')
+		}
+	document.write ('<img border="0" src ="' + imagenes[m].src + '" id="imaa' + m + '" name="imaa' + m + '" onload="tot++;">');
+	if(imagenes[m].a != ""){document.write ('</a>')}
+	}
+document.write ('</span>');
+document.write ('</div>');
+}
+var detienee = 0,posb,pos2b;
+function mueve(){
+pos = document.getElementById('imas').style.left;
+pos2 = document.getElementById('imas2').style.left;
+pos = pos.replace(/px/,"");
+pos = pos.replace(/pt/,"");
+pos = new Number(pos);
+pos2 = pos2.replace(/px/,"");
+pos2 = pos2.replace(/pt/,"");
+pos2 = new Number(pos2);
+if(detienee == 1){
+	posb = pos;
+	pos2b = pos2;
+	}
+if(atras == true){
+pos+=dis;
+pos2 +=dis;
+}
+else{
+pos -= dis;
+pos2 -= dis;
+}
+if(pos2 < (-tam - dis)){
+	if(detienee == 0){
+		document.getElementById('imas2').style.left = pos  + (tam - dis);
+		pos2 = document.getElementById('imas2').style.left;
+		}
+	else{
+		document.getElementById('imas').style.left = pos 
+		}
+	}
+else{
+	document.getElementById('imas').style.left = pos 
+	}
+
+if(pos < (-tam + dis)){
+	if(detienee == 0){
+		document.getElementById('imas').style.left = pos2 + (tam - dis);
+		pos = document.getElementById('imas').style.left;
+		}
+	else{
+		document.getElementById('imas2').style.left = pos2;
+		}
+	}
+else{
+	document.getElementById('imas2').style.left = pos2
+	}
+if(detienee > 0){
+	if(detienee == pasos){
+		vel = velo;
+		atras = true;
+		detienee--;
+		tiempo = setTimeout('mueve()',vel);
+		}
+	else{
+		if(atras == true){
+			if(detienee>(pasos/2))
+				{detienee--}
+			else{
+			vel = velo;
+			clearTimeout(tiempo)
+			}
+			}
+	else{
+		detienee++
+		}
+	if(detienee > (pasos/2) && atras == false){vel +=10}
+		if(detienee < (pasos/2)){vel +=10}
+		tiempo = setTimeout('mueve()',vel)
+		}
+	}
+else{
+tiempo = setTimeout('mueve()',vel)
+	}
+if(atras == true){
+		if (pos == posb){
+			clearTimeout(tiempo);
+			atras = false;
+			}
+		}
+}
+var tiempo;
+var atras = false, ini;
+function inicio(){
+if(tot == (imagenes.length * 2)){clearTimeout(ini);reDimCapas();mueve()}
+else{ini=setTimeout('inicio()',500)}
+}
+function reDimCapas(){
+for(m=0;m<imagenes.length;m++){
+	tam +=document.getElementById('ima'+m).width
+	document.getElementById('imas').style.left = tam;
+	document.getElementById('imas').style.width = tam ;
+	document.getElementById('imas2').style.width = tam;
+	}
+}
+
+</script>
+</head>
+
+<body onload="inicio();" >
+<table bordercolor="#006600" width="51%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="middle">
+		<script>escribe();</script>
+    </td>
+  </tr>
+</table>
+
+<p> 
+</p>
+</body>
+</html>
+
+
+

@@ -1,0 +1,14 @@
+titulo --> pagina de Ayuda
+nombreEncabezado2 -->&nbsp;Grupo 42 - Facultad de Informatica - UNLP
+tituloLogin --> Login del Sistema
+usuario --> &nbsp;User: <input type="text" size="10"> <br>
+password --> &nbsp;Pass: <input type="password" size="10">
+botonLogin -->  <input type="submit" name="loguearse" value="Entrar" width="8" height="3" align="middle"> 
+tituloEnlace --> Links Entretenidos
+link1 --> Un Link por aca
+link2 --> otro por aca
+link3 --> otro por aca
+link4 --> otro por aca
+link5 --> otro por aca
+tituloPrincipal --> &nbsp;aca va el menu con las opciones
+principal --> aca van las cosas del operador

@@ -1,0 +1,128 @@
+.textoEnc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #274539;
+	text-decoration: none;
+	text-align: left;
+}
+.texto1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: White;
+	text-decoration: none;
+	text-align: justify;
+	margin-left: 10;
+	margin-right: 10;
+}
+.titulo1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: normal;
+	color: #000033;
+	text-decoration: none;
+}
+.texto2 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #003366;
+	text-decoration: none;
+	text-align: justify;
+}
+.texto3 {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: Black;
+	text-decoration: none;
+	text-align: justify;
+}
+.titulo2 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-variant: normal;
+	color: #274539;
+	text-decoration: none;
+}
+.subtitulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-variant: normal;
+	color: White;
+	text-decoration: none;
+	margin-left: 10;
+	margin-right: 10;
+}
+.texto4 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #003366;
+	text-decoration: none;
+}
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006699;
+}
+a:visited {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006699;
+}
+a:hover {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #990000;
+}
+.titulo3 {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-variant: normal;
+	color: #006666;
+	text-decoration: none;
+}
+.texto5 {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #003366;
+	text-decoration: none;
+}
+.texto1a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FF6600;
+	text-decoration: none;
+	text-align: justify;
+	font-weight: bold;
+	
+}
+.texto1izq {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #274539;
+	text-decoration: none;
+	text-align: left;
+}
+.main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #274539;
+	text-decoration: none;
+	text-align: justify;
+	margin-left: 10;
+	margin-right: 10;
+}

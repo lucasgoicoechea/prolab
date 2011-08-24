@@ -1,0 +1,35 @@
+
+
+RF\PRACTICA6\FILTRO IN.I
+
+Cap C1 node1 GND
++ 90p
+Cap C2 out node1
++ 33p
+Ind L1 node1 node2 
++ 8.3n
+Res R2 out GND
++ 50
+Volt V1 IN GND 
++ AC = 1
+Short Iin node3 Vin
++ I = Iin
+Res R3 node4 In
++ 1.5
+Cap C3 node3 node4
++ 1.17n
+Ind L2 node2 Vin
++ 0.8184n
+Sweep "AC Analysis"
++ LOOP 1001 FREQ LOG 50Meg 300Meg
++ W=0
++ X "f" "Hz" 100Meg 200Meg
++ Y "Mag" "db" -5 5
++ GRID
++ w=1
++ X "f" "Hz" 100Meg 200Meg
++ Y "Mag" "db" -40 40 AUTOSCALEY
++ GRID
+Show w=0 RI (Vac(Vin)/Iac(Iin))
+show w=1 db (Vac(out))
+EndSweep

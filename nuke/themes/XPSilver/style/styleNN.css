@@ -1,0 +1,30 @@
+FONT		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+TD		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+BODY		{FONT-FAMILY: Tahoma, Verdana, Helvetica, Arial; FONT-SIZE: 11px}
+P		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+DIV		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+INPUT		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+TEXTAREA	{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+FORM 		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+SELECT		{FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; FONT-SIZE: 11px}
+A:link          {BACKGROUND: none; COLOR: #ED1C24; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: underline}
+A:active        {BACKGROUND: none; COLOR: #ED1C24; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: underline}
+A:visited       {BACKGROUND: none; COLOR: #ED1C24; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: underline}
+A:hover         {BACKGROUND: none; COLOR: #0054A6; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: underline}
+.title 		{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+.content 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial;}
+.storytitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+.storycat	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: underline}
+.boxtitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+.boxcontent 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial;}
+.option 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+.tiny		{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+.posted         {BACKGROUND: none; COLOR: #FFFFFF; FONT-SIZE: 11px; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+.sideboxtitle   {BACKGROUND: none; COLOR: #FFFFFF; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma,Verdana,Helvetica,Arial; TEXT-DECORATION: none}
+
+
+
+a.topnav:link {color: #FFFFFF; font-size: 11px}
+a.topnav:active {color: #FFFFFF; font-size: 11px}
+a.topnav:visited {color: #FFFFFF; font-size: 11px}
+a.topnav:hover {color: #0054A6; font-size: 11px}

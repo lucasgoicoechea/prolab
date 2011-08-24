@@ -1,0 +1,126 @@
+#MainMenu 
+{
+	height:33px;
+	background:url(../images/bmid_077.gif);
+	border:0;
+	margin:0;
+}
+#tab 
+{
+	top:0;
+	height:0;
+	background:repeat-x top;
+	margin:2px;
+}
+#tab ul 
+{
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tab li 
+{
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tab a 
+{
+	background:#000 url(../images/bright_077.gif) no-repeat right top;
+	text-decoration:none;
+	border:0;
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tab a span 
+{
+	display:block;
+	background:url(../images/bleft_077.gif) no-repeat left top;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	font-weight:700;
+	line-height:33px;
+	padding:0 15px;
+}
+#tab a:hover,#tab li.item_active a 
+{
+	background-position:right bottom;
+}
+#tab a:hover span,#tab li.item_active a span 
+{
+	background-position:left bottom;
+	color:#FFF;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+}
+.dropmenudiv 
+{
+	position:absolute;
+	top:0;
+	float:left;
+	display:block;
+	visibility:hidden;
+	border:0;
+	background:url(../images/bmid_077.gif);
+	color:#FFF;
+	z-index:100;
+	text-decoration:none;
+	padding:2px;
+}
+.dropmenudiv ul 
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.dropmenudiv li 
+{
+	display:inline;
+	margin:0;
+	padding:0;
+}
+.dropmenudiv a:link,.dropmenudiv a:visited 
+{
+	width:180px;
+	display:block;
+	border:0;
+	color:#FFF;
+	background:url(../images/bleft_077.gif) no-repeat left top;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+}
+.dropmenudiv a span 
+{
+	display:block;
+	line-height:33px;
+	background:url(../images/bright_077.gif) no-repeat right top;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	float:none;
+	padding:0 15px;
+}
+.dropmenudiv a:hover 
+{
+	border:0;
+	background-position:left bottom;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	color:#FFF;
+}
+.dropmenudiv a:hover span 
+{
+	background-position:right bottom;
+	color:#FFF;
+	font-weight:700;
+}

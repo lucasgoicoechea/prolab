@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE>PROLAB - Ingreso/modificación de CV</TITLE>
+<link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+</HEAD>
+<BODY>
+{page1_javascript}
+
+<FORM {page1_attributes}>
+{page1_usuario_html}
+<DIV class="titulo">{page1_header_titulo}</DIV>
+<br />
+<DIV class="header">{page1_header_subtitulo}</DIV>
+
+
+<table width="80%"  border="0" align="center" cellpadding="1" cellspacing="2" >
+	<tr>
+	<td width='100' class="label" >{page1_curso_label}</td>
+	<td class="element">{page1_curso_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_institucion_label}</td>
+	<td class="element">{page1_institucion_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_horas_label}</td>
+	<td class="element">{page1_horas_html}<BR></td>
+	</tr>
+	<tr>
+	<td width='100' class="label" >{page1_anio_label}</td>
+	<td class="element">{page1_anio_html}<BR></td>
+	</tr>
+</table>
+<br />
+<DIV>
+	<DIV class="element">{page1_required_note}</DIV>
+	<DIV class="comment">{page1_clientSide_html}{page1_clientSide_label}</DIV>
+</DIV>
+<DIV class="useraddmenu">
+{page1__qf_page1_preview_html}{page1__qf_page1_submit_html}&nbsp;{page1__qf_page1_modificar_html}&nbsp;{page1_salir_html}
+</DIV>
+
+</FORM>
+</BODY>
+</HTML>
